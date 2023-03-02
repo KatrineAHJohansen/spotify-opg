@@ -1,4 +1,8 @@
 ---
+import "../styles/style.css";
+import Musiccard from "../components/Musiccard.astro"; 
+import Navigation from "../components/Navigation.astro";
+import Aside from "../components/Aside.astro";
 ---
 
 <html lang="en">
@@ -10,6 +14,50 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<div>
+		<Aside/>
+		</div>
+		<Navigation></Navigation>
+		<h1>Fokus</h1>
+		<main>
+		<section class="card_container">
+			<Musiccard header="All Out 2010s" text="Artist">
+				<img src="public/spotify_images/all_out_2010s.jpeg" alt="billede 1">	
+			</Musiccard>
+
+			<Musiccard header="DayDreamer" text="Artist">
+				<img src="public/spotify_images/day_dreamer.jpeg" alt="billede 2">	
+			</Musiccard>
+
+			<Musiccard header="Deep Focus" text="Artist">
+				<img src="public/spotify_images/deep_focus.jpeg" alt="billede 3">	
+			</Musiccard>
+	
+			<Musiccard header="Focus Flow" text="Artist">
+				<img src="public/spotify_images/focus_flow.jpeg" alt="billede 4">	
+			</Musiccard>
+		</section>
+
+		<section class="card_container">
+			<Musiccard header="Instrumental Study" text="Artist">
+				<img src="public/spotify_images/instrumental_study.jpeg" alt="billede 5">	
+			</Musiccard>
+	
+			
+	
+			<Musiccard header="Jazz Vibes" text="Artist">
+				<img src="public/spotify_images/jazz_vibes.jpeg" alt="billede 6">	
+			</Musiccard>
+	
+
+			<Musiccard header="Peaceful Piano" text="Artist">
+				<img src="public/spotify_images/peaceful_piano.jpeg" alt="billede 7">	
+			</Musiccard>
+
+			<Musiccard header="Rap Caviar" text="Artist">
+				<img src="public/spotify_images/rap_caviar.jpeg" alt="billede 7">	
+			</Musiccard>
+		</section>
+		</main>
 	</body>
 </html>

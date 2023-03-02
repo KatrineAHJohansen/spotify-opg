@@ -1,0 +1,25 @@
+---
+const header = Astro.props.header;
+const text = Astro.props.text;
+---
+
+<article class="music_card">
+    <slot/>
+    <h2>{header}</h2>
+    <h3>{text}</h3>
+</article>
+
+<style>
+h3{
+color:gray;
+font-size: 1rem;
+margin-block: 1rem 3rem;
+}
+
+.music_card{
+    padding: 1rem;
+    background-color:#181818;
+    border-radius: 1rem;
+}
+
+</style>
