@@ -13,13 +13,12 @@ import Aside from "../components/Aside.astro";
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body>
+	<body><div class="grid"></div>
 		<div>
-		<Aside/>
-		</div>
-		<Navigation></Navigation>
-		<h1>Fokus</h1>
+		<Navigation></Navigation></div>
+		<div>
 		<main>
+		<h1>Fokus</h1>
 		<section class="card_container">
 			<Musiccard header="All Out 2010s" text="Artist">
 				<img src="public/spotify_images/all_out_2010s.jpeg" alt="billede 1">	
@@ -59,5 +58,7 @@ import Aside from "../components/Aside.astro";
 			</Musiccard>
 		</section>
 		</main>
+		</div> 
 	</body>
 </html>
+
